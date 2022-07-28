@@ -14,12 +14,23 @@
  }
  // .header__main
  &__main {
+  padding-top: rem(120);
+  text-align: center;
  }
  // .header__title
  &__title {
+  font-size: rem(72);
+  line-height: math.div(80, 72);
+  margin: 0 auto;
+  margin-bottom: rem(32);
+  max-width: rem(800);
  }
  // .header__subtitle
  &__subtitle {
+  font-size: rem(24);
+  margin: 0 auto;
+  line-height: math.div( 32, 24);
+  max-width: rem(560);
  }
 }
 .menu {
@@ -35,29 +46,56 @@
  }
  // .menu__item
  &__item {
+  &:not(:last-child) {
+   margin-right: rem(32);
+  }
+ }
+ //.menu__item-phone
+ &__item-phone {
+  margin-right: rem(48);
+ }
+ //.menu__item-reserve
+ &__item-reserve {
+  margin-right: rem(80);
+ }
+ //.menu__item-cart
+ &__item-cart {
+  margin-right: rem(32);
+  position: relative;
+  &::before {
+   @include pseudo;
+   @include background(url("../img/icons/bag.svg"));
+   width: rem(20);
+   height: rem(20);
+   left: rem(-30);
+   top: rem(-2);
+  }
  }
  // .menu__link
  &__link {
+  padding-bottom: rem(32);
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s;
+  &:hover {
+   color: $btnColor;
+   border-bottom: 1px solid $btnColor;
+  }
  }
  // .menu__logo
  &__logo {
   margin: 0 auto;
  }
 }
-.icon-menu {
-}
-.logo {
-}
 
 //====================================================================================================
 
 //Burger
 .icon-menu {
-	//display: block;
 		display: block;
 		position: relative;
 		width: rem(30);
 		height: rem(18);
+  margin-right: rem(50);
 		cursor: pointer;
 		z-index: 5;
 		span,
