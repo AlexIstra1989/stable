@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('html/_head.htm',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-    
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_popup.htm',{})
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+ <div class="wrapper">
+  @@include('html/_header.htm',{})
+  <main class="page">
+   <section class="menu">
+    <div class="menu__container">
+     <div class="menu__inner">
+      <img src="img/menu/menu-image.jpg" alt="#">
+      <div class="menu__content">
+       <h2 class="menu__title title">Меню</h2>
+       <p class="menu__text">Наша кухня — это кухня олдскульного Техаса, французских техник и паназиатских акцентов
+        сплетаются в нашем меню, создавая широчайший ассортимент по вкусам и текстурам.</p>
+       <p class="menu__text">Ферментация, низкотемпературное приготовление, вяление и живой огонь — наши главные
+        инструменты.</p>
+        <div class="menu__items">
+         <div class="menu__item">
+          <h4 class="menu__item-name">Основное</h4>
+          <p class="menu__descr">Закуски, салаты, горячее и др.</p>
+          <a class="menu__btn btn" href="#">Смотреть</a>
+         </div>
+        </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  @@include('html/_footer.htm',{})
+ </div>
+ @@include('html/_popup.htm',{})
+ @@include('html/_js.htm',{})
+</body>
+
 </html>
