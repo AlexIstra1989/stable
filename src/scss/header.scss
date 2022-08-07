@@ -16,6 +16,12 @@
  &__main {
   padding-top: rem(120);
   text-align: center;
+  @media (max-width: $mobileSmall) {
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   height: calc(100vh - rem(185));
+  }
  }
  // .header__title
  &__title {
@@ -24,6 +30,9 @@
   margin: 0 auto;
   margin-bottom: rem(32);
   max-width: rem(800);
+  @media (max-width: $mobileSmall) {
+   display: none;
+  }
  }
  // .header__subtitle
  &__subtitle {
@@ -31,6 +40,9 @@
   margin: 0 auto;
   line-height: math.div( 32, 24);
   max-width: rem(560);
+  @media (max-width: $mobileSmall) {
+   display: none;
+  }
  }
   // .header__btn
   &__btn {
@@ -40,23 +52,105 @@
    }
   }
 }
+//====================================================================================================
 .menu {
+ z-index: 2;
  // .menu__btn
  &__btn {
  }
  // .menu__body
  &__body {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: -110%;
+   overflow: auto;
+   background-color: $darkColor;
+   padding: rem(100) rem(15) rem(50) rem(15) ;
+   transition: top 0.8s;
+   &::before {
+    @include pseudo;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: -110%;
+    left: 0;
+    background-color: $darkColor;
+   }
+   .menu-open & {
+    top: 0;
+    &::before {
+     top: 0;
+    }
+   }
+   .menu-open {
+    padding-top: rem(135);
+    // .menu-open__container
+    &__container {
+    }
+    // .menu-open__items
+    &__items {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
+     //grid-template-columns: repeat(5, 1fr);
+     gap: rem(32);
+     // display: flex;
+     justify-content: center;
+    }
+    // .menu-open__item
+    &__item {
+ 
+     // &:not(:last-child) {
+     //  margin-right: rem(32);
+     // }
+    }
+    // .menu-open__name
+    &__name {
+     @include adaptiveValue("font-size", 32, 24);
+     font-weight: 400;
+     line-height: math.div( 40, 32);
+     margin-bottom: rem(16);
+    }
+    // .menu-open__lists
+    &__lists {
+     display: flex;
+     // display: grid;
+     // grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
+     //grid-template-columns: repeat(2, 1fr);
+     gap: rem(32);
+     width: rem(385);
+     //  &:not(:last-child) {
+     //   margin-right: rem(32);
+     // }
+    }
+    // .menu-open__list
+    &__list {
+     display: flex;
+     flex-direction: column;
+     width: rem(250);
+     //width: 100%; 
+     color: $silverColor;
+    }
+    // .menu-open__list-item
+    &__list-item {
+     &:not(:last-child) {
+      margin-bottom: rem(20);
+     }
+    }
+    // .menu-open__list-link
+    &__list-link {
+    }
+  }
  }
  // .menu__list
  &__list {
   display: flex;
+  z-index: 2;
  }
  // .menu__item
  &__item {
   @include adaptiveValue("margin-right", 32, 10);
-  // &:not(:last-child) {
-  //  margin-right: rem(32);
-  // }
  }
  //.menu__item-phone
  &__item-phone {
@@ -92,12 +186,11 @@
  // .menu__logo
  &__logo {
   margin: 0 auto;
+  padding-top: rem(30);
+  z-index: 2;
  }
 }
-
-//====================================================================================================
-
-//Burger
+//Burger//====================================================================================================
 .icon-menu {
 		display: block;
   @include adaptiveValue("margin-right", 50, 10);
@@ -105,7 +198,7 @@
 		width: rem(30);
 		height: rem(18);
 		cursor: pointer;
-		z-index: 5;
+		z-index: 50;
 		span,
 		&::before,
 		&::after {
