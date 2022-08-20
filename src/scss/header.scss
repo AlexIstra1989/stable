@@ -7,11 +7,14 @@
  }
  // .header__top
  &__top {
+  background: linear-gradient(180deg, rgba(2, 2, 3, 0.72) 0%, rgba(2, 2, 3, 0) 100%);
   font-family: "Jost";
   display: flex;
   align-items: center;
-  height: rem(90);
+  @include adaptiveValue("height", 90, 48);
+  //height: rem(90);
   @media (max-width: $tablet) {
+   justify-content: space-between;
    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   }
  }
@@ -198,6 +201,7 @@
     width: rem(24);
     height: rem(24);
     top: rem(-12);
+    left: 0;
    }
   }
  }
@@ -211,11 +215,32 @@
    border-bottom: 1px solid $btnColor;
   }
  }
+ // .menu__link-mob
+ &__link-mob {
+  display: none;
+  @media (max-width: $tablet) {
+   display: block;
+   font-size: rem(13);
+   line-height: math.div( 20, 13);
+   font-family: "Jost";
+   letter-spacing: rem(1);
+   text-transform: uppercase;
+   margin: 0 auto;
+   z-index: 3;
+  }
+ } 
  // .menu__logo
  &__logo {
   margin: 0 auto;
-  padding-top: rem(30);
+  padding-top: rem(85);
   z-index: 2;
+  @media (max-width: $tablet) {
+   position: absolute;
+   top: rem(70);
+   left: 50%;
+   transform: translateX(-50%);
+   padding-top: rem(20);
+  }
  }
 }
 //Burger//====================================================================================================
@@ -263,4 +288,7 @@
 				transform: rotate(45deg);
 			}
 		}
+  @media (max-width: $tablet) {
+   margin-right: 0;
+  }
 }
