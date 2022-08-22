@@ -5,11 +5,12 @@
 	}
 	// .tabs__title
 	&__title {
-		border: 1px solid #eee;
+		border: 1px solid #808080;
 		padding: rem(10) rem(15);
 		border-radius: rem(5);
 		&._tab-active {
-			border: 1px solid #000;
+   color: $btnColor;
+			border: 1px solid $btnColor;
 		}
 	}
 	// .tabs__content

@@ -9,6 +9,10 @@
  // .menu-block__inner
  &__inner {
   display: flex;
+  @media (max-width:(rem(1175))) {
+   flex-direction: column;
+   align-items: center;
+  }
  }
  // .menu-block__image
  &__image {
@@ -16,10 +20,18 @@
   border-radius: 0px 16px 16px 0px;
   max-width: rem(780);
   width: 100%;
+  height: 100%;
+  @media (max-width:(rem(1175))) {
+   margin-right: 0;
+   margin-bottom: rem(32);
+  }
  }
  // .menu-block__content
  &__content {
   max-width: rem(575);
+  @media (max-width:(rem(1175))) {
+   max-width: 100%;
+  }
  }
  // .menu-block__title
  &__title {
@@ -39,15 +51,16 @@
  }
  // .menu-block__item
  &__item {
-  //display: grid;
-  //grid-template-columns: repeat(auto-fit, minmax(rem(214), 100%));
   display: flex; 
   align-items: center;
   justify-content: space-between;
   padding: rem(16) 0;
   border-top: 1px solid #262424;
   border-bottom: 1px solid #262424;
-  //@include adaptiveValue("gap", 32, 10);
+  @media (max-width: rem(1380)) {
+   flex-direction: column;
+   align-items: inherit;
+  }
  }
  // .menu-block__item-name
  &__item-name {
@@ -55,13 +68,10 @@
   font-weight: 400;
   line-height: math.div( 32, 24);
   width: rem(176);
-  //margin-right: rem(32);
-  //@include adaptiveValue("margin-right", 32, 10);
  }
  //.menu-block__box
  &__box {
   display: flex;
-  //@include adaptiveValue("gap", 32, 10);
  }
  // .menu-block__descr
  &__descr {
@@ -70,7 +80,9 @@
   line-height: math.div( 24, 16);
   max-width: rem(190);
   margin-right: rem(32);
-  //margin: 0 auto;
+  @media (max-width:(rem(1175))) {
+   max-width: 100%;
+  }
  }
  // .menu-block__btn
  &__btn {
