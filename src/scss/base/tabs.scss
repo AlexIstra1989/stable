@@ -1,24 +1,27 @@
-.tabs {
+.events-tabs {
 	// .tabs__navigation
 	&__navigation {
 		display: flex;
+  gap: rem(12);
+  border-bottom: 1px solid #E0E0E0;
 	}
 	// .tabs__title
 	&__title {
-		border: 1px solid #808080;
-		padding: rem(10) rem(15);
-		border-radius: rem(5);
+  font-family: "Jost";
+  color: #808080;
+  padding-bottom: rem(10);
 		&._tab-active {
    color: $btnColor;
-			border: 1px solid $btnColor;
+			border-bottom: 1px solid $btnColor;
 		}
 	}
 	// .tabs__content
 	&__content {
-		border: 1px solid #eee;
-		padding: rem(10) rem(15);
+		// border: 1px solid #eee;
+		// padding: rem(10) rem(15);
 	}
 	// .tabs__body
 	&__body {
+  color: $darkColor;
 	}
 }

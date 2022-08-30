@@ -90,3 +90,128 @@
  }
 }
 //====================================================================================================
+.events {
+ font-family: "Jost";
+ // .events-tabs__container
+ &__container {
+  max-width: rem(1216);
+ }
+ // .events__header
+ &__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: rem(32);
+ }
+ // .events__title
+ &__title {
+  color: $darkColor;
+ }
+ // .events__link-all
+ &__link-all {
+  color: $btnColor;
+  padding: rem(14) rem(20);
+  border: rem(1) solid $btnColor;
+  border-radius: rem(8);
+ }
+}
+.events-tabs {
+ //.events-tabs__navigation
+ &__navigation {
+ }
+ // .events-tabs__title
+ &__title {
+ }
+ // .events-tabs__content
+ &__content {
+ }
+ // .events-tabs__body
+ &__body {
+ 
+ }
+  // .events-tabs__item
+ &__item {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  @include adaptiveValue("gap", 33, 10);
+  padding: rem(32) 0;
+  border-top: rem(1) solid #E5D9D8;
+  border-bottom: rem(1) solid #E5D9D8;
+  @media (max-width: $tablet) {
+   flex-direction: column;
+  }
+ }
+ // .events-tabs__date
+ &__date {
+  display: flex;
+  align-items: center;
+  color: $darkColor;
+ }
+ // .events-tabs__number
+ &__number {
+  font-size: rem(40);
+  line-height: math.div( 48, 40);
+  margin-right: rem(10);
+ }
+ // .events-tabs__day
+ &__day {
+  max-width: 110px;
+  span {
+   color: rgba(186, 148, 143, 1);
+  }
+ }
+ // .events-tabs__image
+ &__image {
+  @media (max-width: $tablet) {
+   width: 100%;
+  }
+  //margin-right: rem(32);
+ }
+ // .events-tabs__descr
+ &__descr {
+  max-width: rem(300);
+  //@include adaptiveValue("margin-right", 32, 10);
+  @media (max-width: $tablet) {
+   max-width: 100%;
+  } 
+ }
+ // .events-tabs__descr-title
+ &__descr-title {
+  font-size: rem(24);
+  font-weight: 500;
+  line-height: math.div(32, 24);
+  margin-bottom: rem(16);
+  color: $darkColor;
+  max-width: rem(290);
+ }
+ // .events-tabs__descr-text
+ &__descr-text {
+  color: $textColor;
+  align-self: stretch;
+  line-height: math.div(26, 16);
+ }
+ // .events-tabs__box
+ &__box {
+  display: flex;
+  @include adaptiveValue("gap", 33, 10);
+ }
+ // .events-tabs__start
+ &__start {
+  color: $darkColor;
+  max-width: rem(125);
+  line-height: math.div( 24, 16);
+  //@include adaptiveValue("margin-right", 32, 10);
+  span {
+   color: rgba(186, 148, 143, 1);
+  }
+ }
+ // .events-tabs__btn
+ &__btn {
+  color: $mainColor !important;
+  &:hover {
+   color: $btnColor !important;
+  }
+
+ }
+}
