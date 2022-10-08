@@ -10,8 +10,61 @@
 		._showmore-active & {
 			display: none;
 			&:last-child {
-				display: block;
+				display: inline-block;
 			}
 		}
 	}
 }
+.events-page {
+ // .events-page__showmore
+ &__showmore {
+ }
+}
+.showmore {
+ // .showmore__content
+ &__content {
+ }
+ // .showmore__button
+ &__button {
+  font-family: "Jost";
+  font-weight: 600;
+  color: $darkColor;
+  line-height: math.div(20, 16);
+  border: 1px solid rgba(199, 161, 122, 0.55);
+  border-radius: 8px;
+  width: 100%;
+  padding: rem(22);
+ }
+ // .showmore__show
+ &__show {
+  position: relative;
+  &::after {
+   @include pseudo;
+   @include background(url("../img/icons/arrow-open.svg"));
+   background-size: contain;
+   width: rem(10);
+   height: rem(5);
+   right: -23px;
+   top: 50%;
+   transform: translateY(-50%);
+  }
+ }
+ // .showmore__hidden
+ &__hidden {
+  display: inline-block;
+  position: relative;
+  &::after {
+   @include pseudo;
+   @include background(url("../img/icons/arrow-open.svg"));
+   background-size: contain;
+   width: rem(10);
+   height: rem(5);
+   right: -23px;
+   top: 40%;
+   transform: translateY(-40%);
+   transform: rotate(180deg);
+  }
+ }
+}
+
+

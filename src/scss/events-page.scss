@@ -1,0 +1,108 @@
+.events-page {
+ @include adaptiveValue("padding-top", 120, 100);
+ @include adaptiveValue("padding-bottom", 70, 25);
+ // .events-page__container
+ &__container {
+  max-width: rem(1216);
+ }
+ // .events-page__title
+ &__title {
+  color: $darkColor;
+  margin-bottom: rem(32);
+ }
+ // .events-page__bottom
+ &__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: rem(32);
+  @media (max-width: rem(475)) {
+   justify-content: center;
+  }
+ }
+ // .events-page__pagination
+ &__pagination {
+  display: flex;
+  align-items: center;
+  gap: rem(3);
+  margin-bottom: rem(10);
+  margin-right: rem(10);
+  span {
+   color: $darkColor;
+  }
+  @media (max-width: rem(475)) {
+   margin: 0;
+  }
+ }
+ //.events-page__arrow
+ &__arrow {
+  @include adaptiveValue("width", 24, 22);
+  @include adaptiveValue("height", 24, 22);
+  &_left,
+  &_right {
+   position: relative;
+   display: inline-flex;
+  }
+  &_left::after,
+  &_right::after {
+   @include pseudo;
+   @include background(url('../img/icons/arrow.svg'));
+   background-size: contain;
+   @include adaptiveValue("width", 24, 22);
+   @include adaptiveValue("height", 24, 22);
+   left: 50%;
+   top: 50%;
+  }
+  &_left::after {
+   transform: rotate(-180deg) translate(50%, 50%);
+  }
+  &_right::after {
+   transform: translate(-50%, -50%);
+  }
+ }
+ // .events-page__pagination-link
+ &__pagination-link {
+  @include adaptiveValue("padding", 24, 22);
+  @include adaptiveValue("width", 24, 22);
+  @include adaptiveValue("height", 24, 22);
+  font-family: "Jost";
+  line-height: math.div(24, 16);
+  letter-spacing: rem(1);
+  color: $darkColor;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: rem(8);
+  transition: background-color 0.5s ease;
+  @media (max-width: 480px) {
+   &:nth-child(7) {
+    display: none;
+   }
+  }
+  @media (max-width: $mobileSmall) {
+   &:nth-child(n+5):nth-child(-n+6) {
+    display: none;
+   }
+  }
+  &._active {
+   background-color: $btnColor;
+   color: $mainColor;
+  }
+  &:hover:not(&._active) {
+   background-color: $silverColor;
+  }
+ }
+}
+//=========================================================
+.show-number {
+ font-family: "Jost";
+ display: flex;
+ align-items: baseline;
+ color: $darkColor;
+ padding-right: rem(23);
+ gap: rem(8);
+ @media (max-width: rem(475)) {
+  display: none;
+ }
+}

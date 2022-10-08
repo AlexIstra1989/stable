@@ -1,0 +1,109 @@
+.event {
+ @include adaptiveValue("padding-bottom", 80, 40);
+ // .event__container
+ &__container {
+  max-width: rem(1216);
+ }
+ // .event__header
+ &__header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include adaptiveValue("padding-bottom", 32, 16);
+ }
+ //.event__date 
+ &__date {
+  @media (max-width: $mobile) {
+   max-width: 100% !important;
+   align-items: baseline !important;
+  }
+ }
+ //.event__number 
+ &__number {
+  @media (max-width: $mobile) {
+   font-size: rem(18) !important;
+   margin-right: rem(5) !important;
+  }
+ }
+ // .event__title
+ &__title {
+  color: $darkColor;
+  max-width: rem(900);
+  @include adaptiveValue("font-size", 64, 30);
+  @media (max-width: $mobile) {
+   order: -1;
+   padding-bottom: rem(12);
+  }
+ }
+ // .event__body
+ &__body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ }
+ // .event__start
+ &__start {
+  display: flex;
+  flex-direction: column;
+  color: $darkColor;
+  max-width: rem(280);
+  width: 100%;
+  line-height: math.div( 24, 16);
+  span {
+   color: rgba(186, 148, 143, 1);
+  }
+  @media (max-width: $mobile) {
+   max-width: rem(140);
+  }
+ }
+ // .event__info
+ &__info {
+  max-width: rem(690);
+  width: 100%;
+  @media (max-width: $tablet) {
+   max-width: 100%;
+  }
+  @media (max-width: $mobile) {
+   order: -1;
+   padding-bottom: rem(16);
+  }
+ }
+ // .event__image
+ &__image {
+  max-width: rem(590);
+  width: 100%;
+  @include adaptiveValue("padding-bottom", 32, 16);
+  @media (max-width: $tablet) {
+   max-width: 100%;
+  }
+ }
+ // .event__text
+ &__text {
+  font-family: "Jost";
+  @include adaptiveValue("font-size", 18, 16);
+  line-height: math.div( 26, 16);
+  color: $textColor;
+  font-weight: 400;
+  max-width: rem(590);
+  @media (max-width: $tablet) {
+   max-width: 100%;
+   padding-bottom: rem(10);
+  }
+ }
+}
+//====================================================================
+.coming {
+ background-color: #FAF5F0;
+ @include adaptiveValue("padding-top", 80, 32);
+ @include adaptiveValue("padding-bottom", 80, 32);
+ // .coming__container
+ &__container {
+  max-width: rem(1216);
+ }
+ // .coming__title
+ &__title {
+  color: $darkColor;
+  @include adaptiveValue("padding-bottom", 32, 20);
+ }
+}

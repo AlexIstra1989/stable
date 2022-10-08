@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Мероприятие"
+})
+<body>
+ <div class="wrapper">
+  @@include('html/_header-bgw.htm',{})
+  <main class="page">
+   <nav class="breadcrumbs">
+    <div class="breadcrumbs__container">
+     <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+       <a class="breadcrumbs__link" href="#">События</a>
+      </li>
+      <li class="breadcrumbs__item">
+       <span class="breadcrumbs__current">Мероприятия</span>
+      </li>
+     </ul>
+    </div>
+   </nav>
+   <section class="event">
+    <div class="event__container">
+     <div class="event__header">
+      <div class="event__date events-tabs__date">
+       <div class="event__number events-tabs__number">09</div>
+       <div class="event__day events-tabs__day">декабря 2021 <span>Чт</span></div>
+      </div>
+      <h1 class="event__title title">Состоится первый гастрономический ужин</h1>
+     </div> 
+     <div class="event__body">
+      <div class="event__start">Начало в 19:00 <span>Зал «Tack room»</span></div>
+      <div class="event__info">
+       <img class="event__image" src="img/events/image-1.png" alt="#">
+       <p class="event__text">В программе сет от двух шефов: Олега Зыкина и Максима Халтурина под
+        аккомпанемент лучших вин. Опытный сомелье подобрал лучшее вино под каждое блюдо.</p>
+      </div> 
+      <button class="event__btn btn">Купить за 2000 ₽</button>
+     </div>  
+    </div>
+   </section>
+   <section class="coming">
+    <div class="coming__container">
+     <h2 class="coming__title title">Ближайшие мероприятия</h2>
+     <div class="events-tabs__item">
+      <div class="events-tabs__date">
+       <div class="events-tabs__number">09</div>
+       <div class="events-tabs__day">декабря 2021 <span>Чт</span></div>
+      </div>
+      <img class="events-tabs__image" src="img/events/image-1.png" alt="#">
+      <div class="events-tabs__descr">
+       <h4 class="events-tabs__descr-title">Состоится первый гастрономический ужин</h4>
+       <p class="events-tabs__descr-text">В программе сет от двух шефов: Олега Зыкина и Максима Халтурина под
+        аккомпанемент лучших вин. Опытный сомелье подобрал лучшее вино под каждое блюдо.</p>
+      </div>
+      <div class="events-tabs__box">
+       <div class="events-tabs__start">Начало в 19:00 <span>Зал «Tack room»</span></div>
+       <button class="events-tabs__btn btn">Купить за 2000 ₽</button>
+      </div>
+     </div>
+     <div class="events-tabs__item">
+      <div class="events-tabs__date">
+       <div class="events-tabs__number">27</div>
+       <div class="events-tabs__day">декабря 2021 <span>Пн</span></div>
+      </div>
+      <img class="events-tabs__image" src="img/events/image-2.png" alt="#">
+      <div class="events-tabs__descr">
+       <h4 class="events-tabs__descr-title">Новогодний праздник для детей и взрослых</h4>
+       <p class="events-tabs__descr-text">Гадание по волшебным снежинкам с помощью ультрафиолета, световое шоу,
+        поздравление от главных волшебников, и в завершение кулинарный мастер-класс.</p>
+      </div>
+      <div class="events-tabs__box">
+       <div class="events-tabs__start">Начало в 11:30 <span>Зал «Китчен»</span></div>
+       <button class="events-tabs__btn btn">Купить за 1500 ₽</button>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  @@include('html/_footer.htm',{})
+ </div>
+ @@include('html/_popup.htm',{})
+ @@include('html/_js.htm',{})
+</body>
+
+</html>

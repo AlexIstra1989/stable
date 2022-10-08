@@ -8,11 +8,13 @@
 	padding: rem(14) rem(20);
  border-radius: rem(8);
  background-color: $btnColor;
+ border: 1px solid transparent;
  transition: all 0.5s;
 	@media (any-hover: hover) {
 		&:hover {
    background-color: $mainColor;
    color: $btnColor;
+   border-color: $btnColor;
 		}
 	}
 	&._fw {

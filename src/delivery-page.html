@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Мероприятие"
+})
+
+<body>
+ <div class="wrapper">
+  @@include('html/_header-bgw.htm',{})
+  <main class="page">
+   <nav class="breadcrumbs">
+    <div class="breadcrumbs__container">
+     <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+       <a class="breadcrumbs__link" href="#">События</a>
+      </li>
+      <li class="breadcrumbs__item">
+       <span class="breadcrumbs__current">О доставке</span>
+      </li>
+     </ul>
+    </div>
+   </nav>
+   <section class="delivery">
+    <div class="delivery__container">
+     <h1 class="delivery__title">Доставка и оплата</h1>
+     <div class="delivery__terms terms">
+      <div class="terms__item">
+       <div class="terms__header">400 ₽</div>
+       <div class="terms__body">Минимальный заказ</div>
+      </div>
+      <div class="terms__item">
+       <div class="terms__header">11—22:00</div>
+       <div class="terms__body">Время работы</div>
+      </div>
+      <div class="terms__item">
+       <div class="terms__header">60 мин</div>
+       <div class="terms__body">Время доставки</div>
+      </div>
+     </div>
+     <ul class="delivery__zones zones">
+      <li class="zones__item zones__item_400">Бесплатная доставка от 400 ₽</li>
+      <li class="zones__item zones__item_800">Бесплатная доставка от 800 ₽</li>
+      <li class="zones__item zones__item_1200">Бесплатная доставка от 1200 ₽</li>
+     </ul>
+    </div>
+
+    <div class="delivery__address">
+     <img class="delivery__map-img" src="img/delivery/map.png" alt="карта доставки">
+     <div class="delivery__address-container">
+      <h5 class="delivery__address-title">Доставка по Кирову</h5>
+      <ul class="delivery__address-list">
+       <li class="delivery__address-item">Доставка осуществляется с 11 до 22:00</li>
+       <li class="delivery__address-item">Прием предзаказов на сайте — круглосуточно</li>
+       <li class="delivery__address-item">Прием заказов по телефону
+        8 (8332) 64-10-86 с 11 до 22:00</li>
+      </ul>
+      <button class="delivery__address-btn btn" type="submit">Проверить адрес</button>
+      <div class="delivery__ways">
+       <p class="delivery__ways-text">Способы оплаты</p>
+       <ul class="delivery__ways-list">
+        <li class="delivery__ways-item">Наличными мобильному официанту</li>
+        <li class="delivery__ways-item">Картой при получении заказа</li>
+        <li class="delivery__ways-item">Картой онлайн, Apple Pay и Google Pay</li>
+       </ul>
+      </div>
+     </div>
+    </div>
+    <div class="delivery__payment payment">
+     <div class="payment__container">
+      <div class="payment__inner">
+       <h5 class="payment__title">Условия оплаты</h5>
+       <p class="payment__text">Принимаем оплату на сайте с помощью банковских карт
+        или платежных систем Apple Pay и Google Pay, а также наличными и картой при доставке заказа.</p>
+       <div class="payment__system">
+        <img class="payment__system-image" src="img/delivery/mastercard.jpg" alt="#">
+        <img class="payment__system-image" src="img/delivery/visa.jpg" alt="#">
+        <img class="payment__system-image" src="img/delivery/mir.jpg" alt="#">
+        <img class="payment__system-image" src="img/delivery/sber-bank.jpg" alt="#">
+        <img class="payment__system-image" src="img/delivery/apple-pay.jpg" alt="#">
+        <img class="payment__system-image" src="img/delivery/google-pay.jpg" alt="#">
+       </div>
+      </div>
+      <img class="payment__image" src="img/delivery/courier.jpg" alt="#">
+     </div>
+    </div>
+   </section>
+  </main>
+  @@include('html/_footer.htm',{})
+ </div>
+ @@include('html/_popup.htm',{})
+ @@include('html/_js.htm',{})
+</body>
+
+</html>

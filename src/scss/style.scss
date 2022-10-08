@@ -136,6 +136,11 @@ body {
 
 // Подключение стилей отдельных блоков
 @import "header";
+@import "header-bgw";
+@import "events-page";
+@import "event-page";
+@import "banquets";
+@import "delivery-page";
 @import "footer";
 
 // Подключение стилей отдельных страниц

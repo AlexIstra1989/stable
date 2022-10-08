@@ -1,23 +1,16 @@
-//====================================================================================================
 .header {
- &__container {
- }
- // .header__top
- &__top {
-  font-family: "Jost";
-  display: flex;
-  align-items: center;
-  @include adaptiveValue("height", 90, 48);
-  //height: rem(90);
-  @media (max-width: $tablet) {
-   justify-content: space-between;
-   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  }
+ @media (max-width: $tablet) {
+  background-color: #FAF5F0;
  }
 }
 //====================================================================================================
 .menu {
  z-index: 2;
+ &_bgw {
+  @media (max-width: $tablet) {
+   flex: 1;
+  }
+ }
  // .menu__btn
  &__btn {
  }
@@ -32,7 +25,7 @@
    background-color: $darkColor;
    padding: rem(100) rem(15) rem(50) rem(15) ;
    transition: top 0.8s;
-   z-index: 1;
+   z-index: 3;
    &::before {
     @include pseudo;
     position: fixed;
@@ -80,7 +73,6 @@
      display: flex;
      flex-direction: column;
      width: rem(176);
-     //width: 100%; 
      color: $silverColor;
     }
     // .menu-open__list-item
@@ -97,12 +89,13 @@
  }
  // .menu__list
  &__list {
-  @include adaptiveValue("font-size", 14, 13);
-  display: flex;
-  z-index: 2;
-  &_left {
-   @media (max-width: $tablet) {
-    display: none;
+  &_bgw {
+   display: flex;
+   z-index: 2;
+   &_left {
+    @media (max-width: $tablet) {
+     display: none;
+    }
    }
   }
  }
@@ -122,30 +115,28 @@
  //.menu__item-reserve
  &__item-reserve {
   margin-right: rem(80);
-  @media (max-width: $tablet) {
-   display: none;
+  &_bgw {
+   display: block !important;
+   margin: 0 auto;
+   color: $darkColor;
+   text-transform: uppercase;
+   letter-spacing: rem(1);
   }
  }
- //.menu__item-cart
- &__item-cart {
-  margin-right: rem(32);
-  position: relative;
-  &::before {
-   @include pseudo;
-   @include background(url("../img/icons/bag.svg"));
-   width: rem(20);
-   height: rem(20);
-   left: rem(-30);
-   top: rem(-2);
-  }
+ //.menu__item-cart_bgw
+ &__item-cart_bgw {
+  display: none;
   @media (max-width: $tablet) {
-   font-size: rem(0);
-   &::before {
-    @include background(url("../img/icons/bag-mob.svg"));
-    width: rem(24);
-    height: rem(24);
-    top: rem(-12);
-    left: 0;
+   display: block;
+   width: rem(24);
+   position: relative;
+    &::before {
+     @include pseudo;
+     @include background(url("../img/icons/bag-mob.svg"));
+     width: rem(24);
+     height: rem(24);
+     top: rem(-12);
+     left: 0;
    }
   }
  }
@@ -158,26 +149,15 @@
    color: $btnColor;
    border-bottom: 1px solid $btnColor;
   }
- }
- // .menu__link-mob
- &__link-mob {
-  display: none;
-  @media (max-width: $tablet) {
-   display: block;
-   font-size: rem(13);
-   line-height: math.div( 20, 13);
-   font-family: "Jost";
-   letter-spacing: rem(1);
-   text-transform: uppercase;
-   margin: 0 auto;
-   z-index: 3;
+  &_black {
+   color: $darkColor;
   }
- } 
+ }
  // .menu__logo
  &__logo {
   margin: 0 auto;
   padding-top: rem(85);
-  z-index: 2;
+  z-index: 3;
   @media (max-width: $tablet) {
    position: absolute;
    top: rem(70);
