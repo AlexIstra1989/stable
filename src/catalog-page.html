@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Заказ"
+})
+<body>
+ <div class="wrapper">
+  @@include('html/_header-bgw.htm',{})
+  <main class="page">
+   <nav class="breadcrumbs">
+    <div class="breadcrumbs__container">
+     <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+       <a class="breadcrumbs__link" href="#">События</a>
+      </li>
+      <li class="breadcrumbs__item">
+       <span class="breadcrumbs__current">Каталог</span>
+      </li>
+     </ul>
+    </div>
+   </nav>
+   <div class="catalog__header header-catalog">
+    <div class="header-catalog__container">
+     <div class="header-catalog__top">
+      <div class="header-catalog__buttons" id="myBtn">
+       <button class="header-catalog__btn active">Доставка</button>
+       <button class="header-catalog__btn">Самовывоз</button>
+       <button class="header-catalog__btn">Предзаказ</button>
+      </div>
+      <select class="header-catalog__select">
+       <option value="1" selected>ул. Космонавта Владислава Волкова, 6А, кв. 67, эт. 5, под. 3, код домофон</option>
+       <option value="2">ул. Юбилейная, 43, кв. 97, эт. 2, под. 1, код домофон</option>
+       <option value="3">ул. Гвардейская, 11, кв. 167, эт. 15, под. 2, код домофон</option>
+       <option value="4">ул. Рабочая, 26А, кв. 112, эт. 23, под. 1, код домофон</option>
+      </select>
+      <div class="header-catalog__time">Ближайшая доставка <span>сегодня 15:00–16:00</span></div>
+     </div>
+    </div>
+   </div>
+   <div class="catalog__body">
+    <div class="catalog__container">
+     <div data-tabs class="catalog__tabs tabs-catalog">
+      <div class="tabs-catalog__slider swiper">
+       <div data-tabs-titles class="tabs-catalog__wrapper swiper-wrapper">
+        <div class="tabs-catalog__slide swiper-slide">
+         <button type="button" class="tabs-catalog__title _tab-active ">Холодные закуски</button>
+        </div>
+        <div class="tabs-catalog__slide swiper-slide">
+         <button type="button" class="tabs-catalog__title">Горячие закуски</button>
+        </div>
+        <div class="tabs-catalog__slide swiper-slide">
+         <button type="button" class="tabs-catalog__title">Салаты</button>
+        </div>
+        <div class="tabs-catalog__slide swiper-slide">
+         <button type="button" class="tabs-catalog__title">Супы</button>
+        </div>
+        <div class="tabs-catalog__slide swiper-slide">
+         <button type="button" class="tabs-catalog__title">Мясо</button>
+        </div>
+        <div class="tabs-catalog__slide swiper-slide">
+         <button type="button" class="tabs-catalog__title">Почти мясо</button>
+        </div>
+        <div class="tabs-catalog__slide swiper-slide">
+         <button type="button" class="tabs-catalog__title">Не мясо</button>
+        </div>
+        <div class="tabs-catalog__slide swiper-slide">
+         <button type="button" class="tabs-catalog__title">Гарниры</button>
+        </div>
+        <div class="tabs-catalog__slide swiper-slide">
+         <button type="button" class="tabs-catalog__title">Римская пицца</button>
+        </div>
+        <div class="tabs-catalog__slide swiper-slide">
+         <button type="button" class="tabs-catalog__title">Бургеры</button>
+        </div>
+        <div class="tabs-catalog__slide swiper-slide">
+         <button type="button" class="tabs-catalog__title">Соусы</button>
+        </div>
+        <div class="tabs-catalog__slide swiper-slide">
+         <button type="button" class="tabs-catalog__title">Свой хлеб</button>
+        </div>
+        <div class="tabs-catalog__slide swiper-slide">       
+         <button type="button" class="tabs-catalog__title">Десерты</button>
+        </div>
+        <div class="tabs-catalog__slide swiper-slide">
+         <button type="button" class="tabs-catalog__title">Фуршетное меню</button>
+        </div>    
+       </div>
+      </div>
+      <div data-tabs-body class="tabs-catalog__content">
+       <div class="tabs-catalog__body catalog-menu">
+        <h5 class="catalog-menu__name">Холодные закуски</h5>
+        <div class="catalog-menu__box">
+        <div class="catalog-menu__item">
+         <img class="catalog-menu__image" src="img/catalog/cold_snacks/image-1.jpg" alt="#">
+         <h5 class="catalog-menu__title">Поке с лососем, авокадо и томатами кимчи</h5>
+         <p class="catalog-menu__descr">190 г, 370 ккал</p>
+         <div class="catalog-menu__bottom">
+          <span class="catalog-menu__price">470 ₽</span>
+          <div class="quantity">
+           <div class="quantity__button quantity__button_plus _icon-plus"></div>
+           <div class="quantity__input">
+            <input autocomplete="off" type="text" name="form[]" value="0">
+           </div>
+           <div class="quantity__button quantity__button_minus _icon-minus"></div>
+          </div>
+         </div>
+        </div>
+        <div class="catalog-menu__item">
+         <img class="catalog-menu__image" src="img/catalog/cold_snacks/image-2.jpg" alt="#">
+         <h5 class="catalog-menu__title">Поке с тунцом, манго и эдамаме</h5>
+         <p class="catalog-menu__descr">190 г, 370 ккал</p>
+         <div class="catalog-menu__bottom">
+          <span class="catalog-menu__price">420 ₽</span>
+          <div class="quantity">
+           <div class="quantity__button quantity__button_plus _icon-plus"></div>
+           <div class="quantity__input">
+            <input autocomplete="off" type="text" name="form[]" value="0">
+           </div>
+           <div class="quantity__button quantity__button_minus _icon-minus"></div>
+          </div>
+         </div>
+        </div>
+        <div class="catalog-menu__item">
+         <img class="catalog-menu__image" src="img/catalog/cold_snacks/image-3.jpg" alt="#">
+         <h5 class="catalog-menu__title">Севиче из карельской форели с кунжутным маслом</h5>
+         <p class="catalog-menu__descr">190 г, 370 ккал</p>
+         <div class="catalog-menu__bottom">
+          <span class="catalog-menu__price">450 ₽</span>
+          <div class="quantity">
+           <div class="quantity__button quantity__button_plus _icon-plus"></div>
+           <div class="quantity__input">
+            <input autocomplete="off" type="text" name="form[]" value="0">
+           </div>
+           <div class="quantity__button quantity__button_minus _icon-minus"></div>
+          </div>
+         </div>
+        </div>
+        <div class="catalog-menu__item">
+         <img class="catalog-menu__image" src="img/catalog/cold_snacks/image-4.jpg" alt="#">
+         <h5 class="catalog-menu__title">Карпаччо из говяжьей грудинки, трюфельный крем и «снег» из фундука</h5>
+         <p class="catalog-menu__descr">190 г, 370 ккал</p>
+         <div class="catalog-menu__bottom">
+          <span class="catalog-menu__price">430 ₽</span>
+          <div class="quantity">
+           <div class="quantity__button quantity__button_plus _icon-plus"></div>
+           <div class="quantity__input">
+            <input autocomplete="off" type="text" name="form[]" value="0">
+           </div>
+           <div class="quantity__button quantity__button_minus _icon-minus"></div>
+          </div>
+         </div>
+        </div>
+        <div class="catalog-menu__item">
+         <img class="catalog-menu__image" src="img/catalog/cold_snacks/image-5.jpg" alt="#">
+         <h5 class="catalog-menu__title">Тар-тар «Говяжий край», шу с айоли и суджук</h5>
+         <p class="catalog-menu__descr">190 г, 370 ккал</p>
+         <div class="catalog-menu__bottom">
+          <span class="catalog-menu__price">350 ₽</span>
+          <div class="quantity">
+           <div class="quantity__button quantity__button_plus _icon-plus"></div>
+           <div class="quantity__input">
+            <input autocomplete="off" type="text" name="form[]" value="0">
+           </div>
+           <div class="quantity__button quantity__button_minus _icon-minus"></div>
+          </div>
+         </div>
+        </div>
+        <div class="catalog-menu__item">
+         <img class="catalog-menu__image" src="img/catalog/cold_snacks/image-6.jpg" alt="#">
+         <h5 class="catalog-menu__title">Страчателла, лечо из печёных перцев и жареный ромейн</h5>
+         <p class="catalog-menu__descr">190 г, 370 ккал</p>
+         <div class="catalog-menu__bottom">
+          <span class="catalog-menu__price">385 ₽</span>
+          <div class="quantity">
+           <div class="quantity__button quantity__button_plus _icon-plus"></div>
+           <div class="quantity__input">
+            <input autocomplete="off" type="text" name="form[]" value="0">
+           </div>
+           <div class="quantity__button quantity__button_minus _icon-minus"></div>
+          </div>
+         </div>
+        </div>
+        <div class="catalog-menu__item">
+         <img class="catalog-menu__image" src="img/catalog/cold_snacks/image-7.jpg" alt="#">
+         <h5 class="catalog-menu__title">Хумус, фокачча и яйцо пашот</h5>
+         <p class="catalog-menu__descr">190 г, 370 ккал</p>
+         <div class="catalog-menu__bottom">
+          <span class="catalog-menu__price">250 ₽</span>
+          <div class="quantity">
+           <div class="quantity__button quantity__button_plus _icon-plus"></div>
+           <div class="quantity__input">
+            <input autocomplete="off" type="text" name="form[]" value="0">
+           </div>
+           <div class="quantity__button quantity__button_minus _icon-minus"></div>
+          </div>
+         </div>
+        </div>
+        <div class="catalog-menu__item">
+         <img class="catalog-menu__image" src="img/catalog/cold_snacks/image-8.jpg" alt="#">
+         <h5 class="catalog-menu__title">Паштет из домашней птицы с мёдом, брусничное варенье и бриошь</h5>
+         <p class="catalog-menu__descr">190 г, 370 ккал</p>
+         <div class="catalog-menu__bottom">
+          <span class="catalog-menu__price">250 ₽</span>
+          <div class="quantity">
+           <div class="quantity__button quantity__button_plus _icon-plus"></div>
+           <div class="quantity__input">
+            <input autocomplete="off" type="text" name="form[]" value="0">
+           </div>
+           <div class="quantity__button quantity__button_minus _icon-minus"></div>
+          </div>
+         </div>
+        </div>
+        </div>
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        <h5 class="catalog-menu__name">Горячие закуски</h5>
+        <div class="catalog-menu__box">
+         <div class="catalog-menu__item">
+          <img class="catalog-menu__image" src="img/catalog/hot_snacks/image-1.jpg" alt="#">
+          <h5 class="catalog-menu__title">Сулугуни, гранат и йогурт</h5>
+          <p class="catalog-menu__descr">190 г, 370 ккал</p>
+          <div class="catalog-menu__bottom">
+           <span class="catalog-menu__price">250 ₽</span>
+           <div class="quantity">
+            <div class="quantity__button quantity__button_plus _icon-plus"></div>
+            <div class="quantity__input">
+             <input autocomplete="off" type="text" name="form[]" value="0">
+            </div>
+            <div class="quantity__button quantity__button_minus _icon-minus"></div>
+           </div>
+          </div>
+         </div>
+         <div class="catalog-menu__item">
+          <img class="catalog-menu__image" src="img/catalog/hot_snacks/image-2.jpg" alt="#">
+          <h5 class="catalog-menu__title">Соте из мидий</h5>
+          <p class="catalog-menu__descr">190 г, 370 ккал</p>
+          <div class="catalog-menu__bottom">
+           <span class="catalog-menu__price">490 ₽</span>
+           <div class="quantity">
+            <div class="quantity__button quantity__button_plus _icon-plus"></div>
+            <div class="quantity__input">
+             <input autocomplete="off" type="text" name="form[]" value="0">
+            </div>
+            <div class="quantity__button quantity__button_minus _icon-minus"></div>
+           </div>
+          </div>
+         </div>
+         <div class="catalog-menu__item">
+          <img class="catalog-menu__image" src="img/catalog/hot_snacks/image-3.jpg" alt="#">
+          <h5 class="catalog-menu__title">Кальмары гриль, шпинат и угорь</h5>
+          <p class="catalog-menu__descr">190 г, 370 ккал</p>
+          <div class="catalog-menu__bottom">
+           <span class="catalog-menu__price">480 ₽</span>
+           <div class="quantity">
+            <div class="quantity__button quantity__button_plus _icon-plus"></div>
+            <div class="quantity__input">
+             <input autocomplete="off" type="text" name="form[]" value="0">
+            </div>
+            <div class="quantity__button quantity__button_minus _icon-minus"></div>
+           </div>
+          </div>
+         </div>
+         <div class="catalog-menu__item">
+          <img class="catalog-menu__image" src="img/catalog/hot_snacks/image-4.jpg" alt="#">
+          <h5 class="catalog-menu__title">Креветки на углях, масло кимчи и айоли</h5>
+          <p class="catalog-menu__descr">190 г, 370 ккал</p>
+          <div class="catalog-menu__bottom">
+           <span class="catalog-menu__price">490 ₽</span>
+           <div class="quantity">
+            <div class="quantity__button quantity__button_plus _icon-plus"></div>
+            <div class="quantity__input">
+             <input autocomplete="off" type="text" name="form[]" value="0">
+            </div>
+            <div class="quantity__button quantity__button_minus _icon-minus"></div>
+           </div>
+          </div>
+         </div>
+         <div class="catalog-menu__item">
+          <img class="catalog-menu__image" src="img/catalog/hot_snacks/image-5.jpg" alt="#">
+          <h5 class="catalog-menu__title">Жульен с маслятами и шампиньонами</h5>
+          <p class="catalog-menu__descr">190 г, 370 ккал</p>
+          <div class="catalog-menu__bottom">
+           <span class="catalog-menu__price">300 ₽</span>
+           <div class="quantity">
+            <div class="quantity__button quantity__button_plus _icon-plus"></div>
+            <div class="quantity__input">
+             <input autocomplete="off" type="text" name="form[]" value="0">
+            </div>
+            <div class="quantity__button quantity__button_minus _icon-minus"></div>
+           </div>
+          </div>
+         </div>
+         <div class="catalog-menu__item">
+          <img class="catalog-menu__image" src="img/catalog/hot_snacks/image-6.jpg" alt="#">
+          <h5 class="catalog-menu__title">Жульен с копчёной говяжей грудинкой и питой</h5>
+          <p class="catalog-menu__descr">190 г, 370 ккал</p>
+          <div class="catalog-menu__bottom">
+           <span class="catalog-menu__price">380 ₽</span>
+           <div class="quantity">
+            <div class="quantity__button quantity__button_plus _icon-plus"></div>
+            <div class="quantity__input">
+             <input autocomplete="off" type="text" name="form[]" value="0">
+            </div>
+            <div class="quantity__button quantity__button_minus _icon-minus"></div>
+           </div>
+          </div>
+         </div>
+         <div class="catalog-menu__item">
+          <img class="catalog-menu__image" src="img/catalog/hot_snacks/image-7.jpg" alt="#">
+          <h5 class="catalog-menu__title">Пельмени из лося и кабана в грибном консоме</h5>
+          <p class="catalog-menu__descr">190 г, 370 ккал</p>
+          <div class="catalog-menu__bottom">
+           <span class="catalog-menu__price">230 ₽</span>
+           <div class="quantity">
+            <div class="quantity__button quantity__button_plus _icon-plus"></div>
+            <div class="quantity__input">
+             <input autocomplete="off" type="text" name="form[]" value="0">
+            </div>
+            <div class="quantity__button quantity__button_minus _icon-minus"></div>
+           </div>
+          </div>
+         </div>
+        </div>
+        </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body furshet-menu">
+        <h5 class="furshet-menu__title">Фуршетное меню</h5>
+        <div class="furshet-menu__box">
+          <div class="furshet-menu__item">
+           <h5 class="furshet-menu__name">Канапе</h5>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Заказ от 10 шт</div>
+            <div class="furshet-menu__weight">20 г</div>
+            <div class="furshet-menu__price">20 ₽/шт</div>
+             <div class="quantity">
+              <div class="quantity__button quantity__button_plus _icon-plus"></div>
+              <div class="quantity__input">
+               <input autocomplete="off" type="text" name="form[]" value="0">
+              </div>
+              <div class="quantity__button quantity__button_minus _icon-minus"></div>
+             </div>
+           </div>
+          </div>
+          <div class="furshet-menu__item">
+           <h5 class="furshet-menu__name">Овощи, фрукты, сыр</h5>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">33 г</div>
+            <div class="furshet-menu__price">750 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">85 г</div>
+            <div class="furshet-menu__price">722 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">255 г</div>
+            <div class="furshet-menu__price">600 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+          </div>
+          <div class="furshet-menu__item">
+           <h5 class="furshet-menu__name">Рыба и морепродукты</h5>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">350 г</div>
+            <div class="furshet-menu__price">950 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">485 г</div>
+            <div class="furshet-menu__price">1700 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">655 г</div>
+            <div class="furshet-menu__price">900 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">855 г</div>
+            <div class="furshet-menu__price">1200 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+          </div>
+          <div class="furshet-menu__item">
+           <h5 class="furshet-menu__name">Мясо</h5>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">350 г</div>
+            <div class="furshet-menu__price">750 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">385 г</div>
+            <div class="furshet-menu__price">860 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">1500 г</div>
+            <div class="furshet-menu__price">2300 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+          </div>
+          <div class="furshet-menu__item">
+           <h5 class="furshet-menu__name">Веганские закуски</h5>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">250 г</div>
+            <div class="furshet-menu__price">550 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">300 г</div>
+            <div class="furshet-menu__price">600 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+          </div>
+          <div class="furshet-menu__item">
+           <h5 class="furshet-menu__name">Холодные закуски на компанию</h5>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">1100 г</div>
+            <div class="furshet-menu__price">1450 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">950 г</div>
+            <div class="furshet-menu__price">1000 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">1500 г</div>
+            <div class="furshet-menu__price">1750 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">1200 г</div>
+            <div class="furshet-menu__price">1500 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+          </div>
+          <div class="furshet-menu__item">
+           <h5 class="furshet-menu__name">Мини-десерты</h5>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">250 г</div>
+            <div class="furshet-menu__price">680 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">300 г</div>
+            <div class="furshet-menu__price">700 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+          </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div data-tabs class="catalog__tabs tabs-catalog tabs-catalog__desct">
+      <nav data-tabs-titles class="tabs-catalog__navigation">
+       <button type="button" class="tabs-catalog__title _tab-active">Холодные закуски</button>
+       <button type="button" class="tabs-catalog__title">Горячие закуски</button>
+       <button type="button" class="tabs-catalog__title">Салаты</button>
+       <button type="button" class="tabs-catalog__title">Супы</button>
+       <button type="button" class="tabs-catalog__title">Мясо</button>
+       <button type="button" class="tabs-catalog__title">Почти мясо</button>
+       <button type="button" class="tabs-catalog__title">Не мясо</button>
+       <button type="button" class="tabs-catalog__title">Гарниры</button>
+       <button type="button" class="tabs-catalog__title">Римская пицца</button>
+       <button type="button" class="tabs-catalog__title">Бургеры</button>
+       <button type="button" class="tabs-catalog__title">Соусы</button>
+       <button type="button" class="tabs-catalog__title">Свой хлеб</button>
+       <button type="button" class="tabs-catalog__title">Десерты</button>
+       <button type="button" class="tabs-catalog__title">Фуршетное меню</button>
+      </nav> 
+      <div data-tabs-body class="tabs-catalog__content">
+       <div class="tabs-catalog__body catalog-menu">
+        <h5 class="catalog-menu__name">Холодные закуски</h5>
+        <div class="catalog-menu__box">
+        <div class="catalog-menu__item">
+         <img class="catalog-menu__image" src="img/catalog/cold_snacks/image-1.jpg" alt="#">
+         <h5 class="catalog-menu__title">Поке с лососем, авокадо и томатами кимчи</h5>
+         <p class="catalog-menu__descr">190 г, 370 ккал</p>
+         <div class="catalog-menu__bottom">
+          <span class="catalog-menu__price">470 ₽</span>
+          <div class="quantity">
+           <div class="quantity__button quantity__button_plus _icon-plus"></div>
+           <div class="quantity__input">
+            <input autocomplete="off" type="text" name="form[]" value="0">
+           </div>
+           <div class="quantity__button quantity__button_minus _icon-minus"></div>
+          </div>
+         </div>
+        </div>
+        <div class="catalog-menu__item">
+         <img class="catalog-menu__image" src="img/catalog/cold_snacks/image-2.jpg" alt="#">
+         <h5 class="catalog-menu__title">Поке с тунцом, манго и эдамаме</h5>
+         <p class="catalog-menu__descr">190 г, 370 ккал</p>
+         <div class="catalog-menu__bottom">
+          <span class="catalog-menu__price">420 ₽</span>
+          <div class="quantity">
+           <div class="quantity__button quantity__button_plus _icon-plus"></div>
+           <div class="quantity__input">
+            <input autocomplete="off" type="text" name="form[]" value="0">
+           </div>
+           <div class="quantity__button quantity__button_minus _icon-minus"></div>
+          </div>
+         </div>
+        </div>
+        <div class="catalog-menu__item">
+         <img class="catalog-menu__image" src="img/catalog/cold_snacks/image-3.jpg" alt="#">
+         <h5 class="catalog-menu__title">Севиче из карельской форели с кунжутным маслом</h5>
+         <p class="catalog-menu__descr">190 г, 370 ккал</p>
+         <div class="catalog-menu__bottom">
+          <span class="catalog-menu__price">450 ₽</span>
+          <div class="quantity">
+           <div class="quantity__button quantity__button_plus _icon-plus"></div>
+           <div class="quantity__input">
+            <input autocomplete="off" type="text" name="form[]" value="0">
+           </div>
+           <div class="quantity__button quantity__button_minus _icon-minus"></div>
+          </div>
+         </div>
+        </div>
+        <div class="catalog-menu__item">
+         <img class="catalog-menu__image" src="img/catalog/cold_snacks/image-4.jpg" alt="#">
+         <h5 class="catalog-menu__title">Карпаччо из говяжьей грудинки, трюфельный крем и «снег» из фундука</h5>
+         <p class="catalog-menu__descr">190 г, 370 ккал</p>
+         <div class="catalog-menu__bottom">
+          <span class="catalog-menu__price">430 ₽</span>
+          <div class="quantity">
+           <div class="quantity__button quantity__button_plus _icon-plus"></div>
+           <div class="quantity__input">
+            <input autocomplete="off" type="text" name="form[]" value="0">
+           </div>
+           <div class="quantity__button quantity__button_minus _icon-minus"></div>
+          </div>
+         </div>
+        </div>
+        <div class="catalog-menu__item">
+         <img class="catalog-menu__image" src="img/catalog/cold_snacks/image-5.jpg" alt="#">
+         <h5 class="catalog-menu__title">Тар-тар «Говяжий край», шу с айоли и суджук</h5>
+         <p class="catalog-menu__descr">190 г, 370 ккал</p>
+         <div class="catalog-menu__bottom">
+          <span class="catalog-menu__price">350 ₽</span>
+          <div class="quantity">
+           <div class="quantity__button quantity__button_plus _icon-plus"></div>
+           <div class="quantity__input">
+            <input autocomplete="off" type="text" name="form[]" value="0">
+           </div>
+           <div class="quantity__button quantity__button_minus _icon-minus"></div>
+          </div>
+         </div>
+        </div>
+        <div class="catalog-menu__item">
+         <img class="catalog-menu__image" src="img/catalog/cold_snacks/image-6.jpg" alt="#">
+         <h5 class="catalog-menu__title">Страчателла, лечо из печёных перцев и жареный ромейн</h5>
+         <p class="catalog-menu__descr">190 г, 370 ккал</p>
+         <div class="catalog-menu__bottom">
+          <span class="catalog-menu__price">385 ₽</span>
+          <div class="quantity">
+           <div class="quantity__button quantity__button_plus _icon-plus"></div>
+           <div class="quantity__input">
+            <input autocomplete="off" type="text" name="form[]" value="0">
+           </div>
+           <div class="quantity__button quantity__button_minus _icon-minus"></div>
+          </div>
+         </div>
+        </div>
+        <div class="catalog-menu__item">
+         <img class="catalog-menu__image" src="img/catalog/cold_snacks/image-7.jpg" alt="#">
+         <h5 class="catalog-menu__title">Хумус, фокачча и яйцо пашот</h5>
+         <p class="catalog-menu__descr">190 г, 370 ккал</p>
+         <div class="catalog-menu__bottom">
+          <span class="catalog-menu__price">250 ₽</span>
+          <div class="quantity">
+           <div class="quantity__button quantity__button_plus _icon-plus"></div>
+           <div class="quantity__input">
+            <input autocomplete="off" type="text" name="form[]" value="0">
+           </div>
+           <div class="quantity__button quantity__button_minus _icon-minus"></div>
+          </div>
+         </div>
+        </div>
+        <div class="catalog-menu__item">
+         <img class="catalog-menu__image" src="img/catalog/cold_snacks/image-8.jpg" alt="#">
+         <h5 class="catalog-menu__title">Паштет из домашней птицы с мёдом, брусничное варенье и бриошь</h5>
+         <p class="catalog-menu__descr">190 г, 370 ккал</p>
+         <div class="catalog-menu__bottom">
+          <span class="catalog-menu__price">250 ₽</span>
+          <div class="quantity">
+           <div class="quantity__button quantity__button_plus _icon-plus"></div>
+           <div class="quantity__input">
+            <input autocomplete="off" type="text" name="form[]" value="0">
+           </div>
+           <div class="quantity__button quantity__button_minus _icon-minus"></div>
+          </div>
+         </div>
+        </div>
+        </div>
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        <h5 class="catalog-menu__name">Горячие закуски</h5>
+        <div class="catalog-menu__box">
+         <div class="catalog-menu__item">
+          <img class="catalog-menu__image" src="img/catalog/hot_snacks/image-1.jpg" alt="#">
+          <h5 class="catalog-menu__title">Сулугуни, гранат и йогурт</h5>
+          <p class="catalog-menu__descr">190 г, 370 ккал</p>
+          <div class="catalog-menu__bottom">
+           <span class="catalog-menu__price">250 ₽</span>
+           <div class="quantity">
+            <div class="quantity__button quantity__button_plus _icon-plus"></div>
+            <div class="quantity__input">
+             <input autocomplete="off" type="text" name="form[]" value="0">
+            </div>
+            <div class="quantity__button quantity__button_minus _icon-minus"></div>
+           </div>
+          </div>
+         </div>
+         <div class="catalog-menu__item">
+          <img class="catalog-menu__image" src="img/catalog/hot_snacks/image-2.jpg" alt="#">
+          <h5 class="catalog-menu__title">Соте из мидий</h5>
+          <p class="catalog-menu__descr">190 г, 370 ккал</p>
+          <div class="catalog-menu__bottom">
+           <span class="catalog-menu__price">490 ₽</span>
+           <div class="quantity">
+            <div class="quantity__button quantity__button_plus _icon-plus"></div>
+            <div class="quantity__input">
+             <input autocomplete="off" type="text" name="form[]" value="0">
+            </div>
+            <div class="quantity__button quantity__button_minus _icon-minus"></div>
+           </div>
+          </div>
+         </div>
+         <div class="catalog-menu__item">
+          <img class="catalog-menu__image" src="img/catalog/hot_snacks/image-3.jpg" alt="#">
+          <h5 class="catalog-menu__title">Кальмары гриль, шпинат и угорь</h5>
+          <p class="catalog-menu__descr">190 г, 370 ккал</p>
+          <div class="catalog-menu__bottom">
+           <span class="catalog-menu__price">480 ₽</span>
+           <div class="quantity">
+            <div class="quantity__button quantity__button_plus _icon-plus"></div>
+            <div class="quantity__input">
+             <input autocomplete="off" type="text" name="form[]" value="0">
+            </div>
+            <div class="quantity__button quantity__button_minus _icon-minus"></div>
+           </div>
+          </div>
+         </div>
+         <div class="catalog-menu__item">
+          <img class="catalog-menu__image" src="img/catalog/hot_snacks/image-4.jpg" alt="#">
+          <h5 class="catalog-menu__title">Креветки на углях, масло кимчи и айоли</h5>
+          <p class="catalog-menu__descr">190 г, 370 ккал</p>
+          <div class="catalog-menu__bottom">
+           <span class="catalog-menu__price">490 ₽</span>
+           <div class="quantity">
+            <div class="quantity__button quantity__button_plus _icon-plus"></div>
+            <div class="quantity__input">
+             <input autocomplete="off" type="text" name="form[]" value="0">
+            </div>
+            <div class="quantity__button quantity__button_minus _icon-minus"></div>
+           </div>
+          </div>
+         </div>
+         <div class="catalog-menu__item">
+          <img class="catalog-menu__image" src="img/catalog/hot_snacks/image-5.jpg" alt="#">
+          <h5 class="catalog-menu__title">Жульен с маслятами и шампиньонами</h5>
+          <p class="catalog-menu__descr">190 г, 370 ккал</p>
+          <div class="catalog-menu__bottom">
+           <span class="catalog-menu__price">300 ₽</span>
+           <div class="quantity">
+            <div class="quantity__button quantity__button_plus _icon-plus"></div>
+            <div class="quantity__input">
+             <input autocomplete="off" type="text" name="form[]" value="0">
+            </div>
+            <div class="quantity__button quantity__button_minus _icon-minus"></div>
+           </div>
+          </div>
+         </div>
+         <div class="catalog-menu__item">
+          <img class="catalog-menu__image" src="img/catalog/hot_snacks/image-6.jpg" alt="#">
+          <h5 class="catalog-menu__title">Жульен с копчёной говяжей грудинкой и питой</h5>
+          <p class="catalog-menu__descr">190 г, 370 ккал</p>
+          <div class="catalog-menu__bottom">
+           <span class="catalog-menu__price">380 ₽</span>
+           <div class="quantity">
+            <div class="quantity__button quantity__button_plus _icon-plus"></div>
+            <div class="quantity__input">
+             <input autocomplete="off" type="text" name="form[]" value="0">
+            </div>
+            <div class="quantity__button quantity__button_minus _icon-minus"></div>
+           </div>
+          </div>
+         </div>
+         <div class="catalog-menu__item">
+          <img class="catalog-menu__image" src="img/catalog/hot_snacks/image-7.jpg" alt="#">
+          <h5 class="catalog-menu__title">Пельмени из лося и кабана в грибном консоме</h5>
+          <p class="catalog-menu__descr">190 г, 370 ккал</p>
+          <div class="catalog-menu__bottom">
+           <span class="catalog-menu__price">230 ₽</span>
+           <div class="quantity">
+            <div class="quantity__button quantity__button_plus _icon-plus"></div>
+            <div class="quantity__input">
+             <input autocomplete="off" type="text" name="form[]" value="0">
+            </div>
+            <div class="quantity__button quantity__button_minus _icon-minus"></div>
+           </div>
+          </div>
+         </div>
+        </div>
+        </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body catalog-menu">
+        Содержимое третьего таба
+       </div>
+       <div class="tabs-catalog__body furshet-menu">
+        <h5 class="furshet-menu__title">Фуршетное меню</h5>
+        <div class="furshet-menu__box">
+          <div class="furshet-menu__item">
+           <h5 class="furshet-menu__name">Канапе</h5>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Заказ от 10 шт</div>
+            <div class="furshet-menu__weight">20 г</div>
+            <div class="furshet-menu__price">20 ₽/шт</div>
+             <div class="quantity">
+              <div class="quantity__button quantity__button_plus _icon-plus"></div>
+              <div class="quantity__input">
+               <input autocomplete="off" type="text" name="form[]" value="0">
+              </div>
+              <div class="quantity__button quantity__button_minus _icon-minus"></div>
+             </div>
+           </div>
+          </div>
+          <div class="furshet-menu__item">
+           <h5 class="furshet-menu__name">Овощи, фрукты, сыр</h5>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">33 г</div>
+            <div class="furshet-menu__price">750 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">85 г</div>
+            <div class="furshet-menu__price">722 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">255 г</div>
+            <div class="furshet-menu__price">600 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+          </div>
+          <div class="furshet-menu__item">
+           <h5 class="furshet-menu__name">Рыба и морепродукты</h5>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">350 г</div>
+            <div class="furshet-menu__price">950 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">485 г</div>
+            <div class="furshet-menu__price">1700 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">655 г</div>
+            <div class="furshet-menu__price">900 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">855 г</div>
+            <div class="furshet-menu__price">1200 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+          </div>
+          <div class="furshet-menu__item">
+           <h5 class="furshet-menu__name">Мясо</h5>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">350 г</div>
+            <div class="furshet-menu__price">750 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">385 г</div>
+            <div class="furshet-menu__price">860 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">1500 г</div>
+            <div class="furshet-menu__price">2300 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+          </div>
+          <div class="furshet-menu__item">
+           <h5 class="furshet-menu__name">Веганские закуски</h5>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">250 г</div>
+            <div class="furshet-menu__price">550 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">300 г</div>
+            <div class="furshet-menu__price">600 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+          </div>
+          <div class="furshet-menu__item">
+           <h5 class="furshet-menu__name">Холодные закуски на компанию</h5>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">1100 г</div>
+            <div class="furshet-menu__price">1450 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">950 г</div>
+            <div class="furshet-menu__price">1000 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">1500 г</div>
+            <div class="furshet-menu__price">1750 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">1200 г</div>
+            <div class="furshet-menu__price">1500 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+          </div>
+          <div class="furshet-menu__item">
+           <h5 class="furshet-menu__name">Мини-десерты</h5>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">250 г</div>
+            <div class="furshet-menu__price">680 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+           <div class="furshet-menu__descr">
+            <div class="furshet-menu__descr-name">Какое-то длинное название пункта овощи, фрукты, сыр</div>
+            <div class="furshet-menu__weight">300 г</div>
+            <div class="furshet-menu__price">700 ₽</div>
+            <div class="quantity">
+             <div class="quantity__button quantity__button_plus _icon-plus"></div>
+             <div class="quantity__input">
+              <input autocomplete="off" type="text" name="form[]" value="0">
+             </div>
+             <div class="quantity__button quantity__button_minus _icon-minus"></div>
+            </div>
+           </div>
+          </div>
+        </div>
+       </div>
+      </div>
+     </div> 
+    </div>
+   </div>
+  </main>
+  @@include('html/_footer.htm',{})
+ </div>
+ @@include('html/_popup.htm',{})
+ @@include('html/_js.htm',{})
+
+</body>
+
+</html>

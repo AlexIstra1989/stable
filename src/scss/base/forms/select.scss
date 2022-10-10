@@ -153,3 +153,21 @@
   width: 100%;
  }
 }
+//===============================================================================
+.header-catalog {
+ .select__title {
+  color: $btnColor;
+ }
+	.select__value:after  {
+  @include background(url("../../../img/icons/arrow-open_gold.svg"));
+	}
+ .select__options {
+  border: none;
+ }
+ .select__option {
+  font-weight: 500;
+  font-family: "Jost";
+  width: 100%;
+  color: $btnColor;
+ }
+}

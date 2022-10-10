@@ -234,7 +234,7 @@ export function formQuantity() {
 				value++;
 			} else {
 				--value;
-				if (value < 1) value = 1;
+				if (value < 1) value = 0;
 			}
 			targetElement.closest('.quantity').querySelector('input').value = value;
 		}
