@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Карточка товара"
+})
+<body>
+ <div class="wrapper">
+  @@include('html/_header-bgw.htm',{})
+  <main class="page">
+   <nav class="breadcrumbs">
+    <div class="breadcrumbs__container">
+     <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+       <a class="breadcrumbs__link" href="#">События</a>
+      </li>
+      <li class="breadcrumbs__item">
+       <a class="breadcrumbs__link" href="#">Заказ</a>
+      </li>
+      <li class="breadcrumbs__item">
+       <span class="breadcrumbs__current">Поке с лососем, авокадо и томатами кимчи</span>
+      </li>
+     </ul>
+    </div>
+   </nav>
+   <section class="product">
+    <div class="product__inner">
+     <div class="product__info">
+      <p class="product__subtitle">Холодные закуски</p>
+      <h1 class="product__title">Поке с лососем, авокадо и томатами кимчи</h1>
+      <button class="product__btn btn" type="button">Заказать за 470 ₽</button>
+     </div>
+     <img class="product__image" src="img/product/image-1.jpg" alt="#">
+    </div>
+   </section>
+   <section class="information">
+    <div class="information__container">
+     <div class="information__composition">
+      <h3 class="information__composition-title">Состав блюда</h3>
+      <span class="information__composition-weight">160 г</span>
+      <p class="information__composition-text">Лосось свежий, помидоры, авокадо, базилик, кинза,
+       лук красный репчатый, соус кимчи, рис, копченый сыр сулугуни, соль</p>
+     </div>
+     <div class="information__value">
+      <h3 class="information__value-title">Пищевая ценность блюда</h3>
+      <p class="information__value-text">Значения указаны за 100 грамм</p>
+      <div class="information__value-items">
+       <div class="information__value-item">
+        <div class="information__value-num">17</div>
+        <div class="information__value-name">Белки</div>
+       </div>
+       <div class="information__value-item">
+        <div class="information__value-num">30</div>
+        <div class="information__value-name">Жиры</div>
+       </div>
+       <div class="information__value-item">
+        <div class="information__value-num">10</div>
+        <div class="information__value-name">Углеводы</div>
+       </div>
+       <div class="information__value-item">
+        <div class="information__value-num">370</div>
+        <div class="information__value-name">Ккал</div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section> 
+   <section class="more">
+    <div class="more__container">
+     <h3 class="more__title">С блюдом сочетаются</h3>
+     <div class="more__slider swiper">
+      <div class="more__wrapper swiper-wrapper">
+       <div class="more__slide swiper-slide"></div>
+       <div class="more__slide swiper-slide"></div>
+       <div class="more__slide swiper-slide"></div>
+       <div class="more__slide swiper-slide"></div>
+       <div class="more__slide swiper-slide"></div>
+       <div class="more__slide swiper-slide"></div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  @@include('html/_footer.htm',{})
+ </div>
+ @@include('html/_popup.htm',{})
+ @@include('html/_js.htm',{})
+</body>
+
+</html>

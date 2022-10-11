@@ -1,0 +1,169 @@
+.product {
+ // .product__inner
+ &__inner {
+  display: flex;
+  @media (max-width: rem(1210)) {
+   flex-direction: column;
+  }
+ }
+ // .product__info
+ &__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @include adaptiveValue("gap", 32, 16);
+  @include adaptiveValue("padding-left", 86, 40);
+  @include adaptiveValue("padding-right", 86, 40);
+  background-color: #FAF5F0;
+  width: 100%;
+  @media (max-width: rem(1210)) {
+   padding: rem(20);
+  }
+ }
+ // .product__subtitle
+ &__subtitle {
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: rem(14);
+  line-height: math.div(16, 14);
+  color: $btnColor;
+  margin-top: auto;
+ }
+ // .product__title
+ &__title {
+  @include adaptiveValue("font-size", 55, 32);
+  line-height: math.div(72, 64);
+  color: $darkColor;
+  max-width: rem(604);
+  width: 100%;
+  @media (max-width: rem(1210)) {
+   max-width: 100%;
+  }
+ }
+ // .product__btn
+ &__btn {
+  margin-bottom: auto;
+  @media (max-width: $mobileSmall) {
+   width: 100%;
+   justify-content: center;
+  }
+ }
+ // .product__image
+ &__image {
+  width: 100%;
+ }
+}
+//=================================================
+.information {
+ @include adaptiveValue("padding-top", 80, 30);
+ @include adaptiveValue("padding-bottom", 80, 30);
+ text-align: center;
+ // .information__container
+ &__container {
+  max-width: rem(588);
+ }
+ // .information__composition
+ &__composition {
+  @include adaptiveValue("margin-bottom", 80, 30);
+ }
+ // .information__composition-title
+ &__composition-title {
+  @include adaptiveValue("font-size", 40, 24);
+  line-height: math.div(48, 40);
+  color: $darkColor;
+ }
+ // .information__composition-weight
+ &__composition-weight {
+  font-family: "Jost";
+  font-size: rem(18);
+  line-height: math.div(30, 18);
+  color: $textColor;
+  @include adaptiveValue("margin-bottom", 32, 16);
+ }
+ // .information__composition-text
+ &__composition-text {
+  font-family: "Jost";
+  font-weight: 400;
+  @include adaptiveValue("font-size", 18, 16);
+  line-height: math.div(30, 18);
+  color: $textColor;
+ }
+ // .information__value
+ &__value {
+ }
+ // .information__value-title
+ &__value-title {
+  font-weight: 400;
+  @include adaptiveValue("font-size", 40, 24);
+  line-height: math.div(48, 40);
+  color: $darkColor;
+  max-width: rem(480);
+  width: 100%;
+  letter-spacing: rem(-3);
+  margin: 0 auto;
+ }
+ // .information__value-text
+ &__value-text {
+  font-family: "Jost";
+  font-weight: 400;
+  line-height: math.div(30, 18);
+  color: $textColor;
+  @include adaptiveValue("font-size", 18, 16);
+  @include adaptiveValue("margin-bottom", 32, 16);
+ }
+ // .information__value-items
+ &__value-items {
+  display: flex;
+  @include adaptiveValue("gap", 32, 16);
+  font-family: "Jost";
+ }
+ // .information__value-item
+ &__value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: rem(128.25);
+  width: 100%;
+  &:not(:last-child) {
+   @include adaptiveValue("padding-right", 32, 16);
+   border-right: rem(1) solid #E5E1E1;
+  }
+ }
+ // .information__value-num
+ &__value-num {
+  @include adaptiveValue("font-size", 40, 28);
+  line-height: math.div(48, 40);
+  font-weight: 500;
+  color: $btnColor;
+ }
+ // .information__value-name
+ &__value-name {
+  @include adaptiveValue("font-size", 16, 14);
+  line-height: math.div(24, 16);
+  color: $textColor;
+ }
+}
+//====================================================
+.more {
+ // .more__container
+ &__container {
+ }
+ // .more__title
+ &__title {
+ }
+ // .more__slider
+ &__slider {
+ }
+ // .more__wrapper
+ &__wrapper {
+ }
+ // .more__slide
+ &__slide {
+ }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
