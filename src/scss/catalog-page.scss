@@ -67,6 +67,10 @@
   @media (max-width: $mobile) {
    display: block;
  }
+ // .tabs-catalog__wrapper
+ &__wrapper {
+  margin-bottom: rem(20);
+ }
  // .tabs-catalog__desct
  &__desct {
   display: block;
@@ -74,12 +78,6 @@
    display: none;
   }
 }
-// .tabs-catalog__slide {
-//  .swiper-slide {
-//   max-width: 100%;
-//  }
-// }
-
  // .tabs-catalog__navigation
  &__navigation {
   font-family: "Jost";
@@ -91,17 +89,7 @@
   flex-wrap: wrap;
   row-gap: rem(12);
   column-gap: rem(8);
-  // @media (max-width: $mobile) {
-  //  display: none;
-  // }
  }
-// .tabs-catalog__slider 
- // &__slider {
- //  display: none;
- //  @media (max-width: $mobile) {
- //   display: block;
- //  }
- // } 
  // .tabs-catalog__title
  &__title {
   font-size: rem(14);
@@ -114,12 +102,9 @@
    background-color: $btnColor;
    color: $mainColor;
   }
- }
- // .tabs-catalog__content
- &__content {
- }
- // .tabs-catalog__body
- &__body {
+  @media (max-width: $mobile) {
+   width: 100%;
+  }
  }
 }
 //===================================================================
@@ -135,7 +120,7 @@
  // .catalog-menu__box
  &__box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 280px));
+  grid-template-columns: repeat(auto-fit, minmax(rem(280), 1fr));
   row-gap: rem(48);
   column-gap: rem(32);
  }
@@ -244,4 +229,3 @@
   width: 100%;
  }
 }
-
