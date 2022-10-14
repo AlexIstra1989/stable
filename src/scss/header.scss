@@ -1,14 +1,12 @@
 //====================================================================================================
 .header {
- &__container {
- }
  // .header__top
  &__top {
   font-family: "Jost";
   display: flex;
   align-items: center;
+  justify-content: space-between;
   @include adaptiveValue("height", 90, 48);
-  //height: rem(90);
   @media (max-width: $tablet) {
    justify-content: space-between;
    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
@@ -18,8 +16,13 @@
 //====================================================================================================
 .menu {
  z-index: 2;
- // .menu__btn
- &__btn {
+ &:last-child {
+  margin-left: auto;
+ }
+ @media (max-width: $tablet) {
+  &:last-child {
+   margin-left: 0;
+  }
  }
  // .menu__body
  &__body {
@@ -50,18 +53,12 @@
    }
    .menu-open {
     @include adaptiveValue("padding-top", 135, 90);
-    // .menu-open__container
-    &__container {
-    }
     // .menu-open__items
     &__items {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(180px, auto));
      gap: rem(32);
      justify-content: center;
-    }
-    // .menu-open__item
-    &__item {
     }
     // .menu-open__name
     &__name {
@@ -79,8 +76,7 @@
     &__list {
      display: flex;
      flex-direction: column;
-     width: rem(176);
-     //width: 100%; 
+     width: rem(176); 
      color: $silverColor;
     }
     // .menu-open__list-item
@@ -175,16 +171,11 @@
  } 
  // .menu__logo
  &__logo {
-  margin: 0 auto;
-  padding-top: rem(85);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: rem(105);
   z-index: 2;
-  @media (max-width: $tablet) {
-   position: absolute;
-   top: rem(70);
-   left: 50%;
-   transform: translateX(-50%);
-   padding-top: rem(20);
-  }
  }
 }
 //Burger//====================================================================================================

@@ -11,9 +11,6 @@
    flex: 1;
   }
  }
- // .menu__btn
- &__btn {
- }
  // .menu__body
  &__body {
    position: fixed;
@@ -155,16 +152,11 @@
  }
  // .menu__logo
  &__logo {
-  margin: 0 auto;
-  padding-top: rem(85);
-  z-index: 3;
-  @media (max-width: $tablet) {
-   position: absolute;
-   top: rem(70);
-   left: 50%;
-   transform: translateX(-50%);
-   padding-top: rem(20);
-  }
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  padding-top: rem(105);
  }
 }
 //Burger//====================================================================================================
